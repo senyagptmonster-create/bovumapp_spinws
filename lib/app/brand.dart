@@ -1,27 +1,26 @@
 import 'package:flutter/material.dart';
 
-/// Единственный файл, который отличается между приложениями конвейера.
-/// Сгенерирован _pipeline/generate_all.ps1 — править вручную нет смысла.
+/// Единственный файл, отличающийся между приложениями конвейера.
+/// Сгенерирован _pipeline/generate_v2.ps1 — править вручную нет смысла.
 
 const String kAppTitle = 'BVD';
-const String kSportTitle = 'Boxing';
-const String kSportTagline = 'Twelve rounds of know-how';
+const String kProductTitle = 'Formation Board';
+const String kProductTagline = 'Drag players into shape';
 const String kBrandLetter = 'B';
 
-/// Раскладка главного экрана, одна на бренд (Bovada).
-const int kBrandLayout = 2;
+/// Тема продукта: match / formation. Бренд: Bovada.
+const bool kIsLight = false;
+const double kRadius = 4;
 
-/// Оформление, одно на приложение внутри бренда (gradient).
-const int kStyleVariant = 0;
+const String kDisplayFont = 'AppDisplay';
+const String kBodyFont = 'AppDisplay';
 
-const Color cBgDark = Color(0xFF000000);
-const Color cBgMid = Color(0xFF150609);
-const Color cBgLight = Color(0xFF330E13);
+const Color cBg = Color(0xFF0E3A1B);
+const Color cBgDeep = Color(0xFF08240F);
+const Color cSurface = Color(0xFF17572B);
+const Color cEdge = Color(0xFF4A7C5A);
+const Color cAlt = Color(0xFFE8F5E9);
+
+/// Акцент — от бренда, поэтому иконка перекликается с интерфейсом.
 const Color cAccent = Color(0xFFCA1F25);
 const Color cAccent2 = Color(0xFFE8434A);
-const Color cAlt = Color(0xFF042D73);
-const Color cInk = Color(0xFF0A0203);
-const Color cPaper = Color(0xFFFFFFFF);
-
-const String kFontFamily = 'sans-serif-black';
-const double kRadius = 22;
